@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{23360355-1E01-44FB-9C6F-CB6AD9E6589E}|text_11_28\\text_11_28.vcxproj|D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\text_11_28\\text_11_28_.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23360355-1E01-44FB-9C6F-CB6AD9E6589E}|text_11_28\\text_11_28.vcxproj|solutionrelative:text_11_28\\text_11_28_.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23360355-1E01-44FB-9C6F-CB6AD9E6589E}|text_11_28\\text_11_28.vcxproj|D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\text_11_28\\text_11_28.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{23360355-1E01-44FB-9C6F-CB6AD9E6589E}|text_11_28\\text_11_28.vcxproj|solutionrelative:text_11_28\\text_11_28.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "text_11_28_.c",
+              "DocumentMoniker": "D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\text_11_28\\text_11_28_.c",
+              "RelativeDocumentMoniker": "text_11_28\\text_11_28_.c",
+              "ToolTip": "D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\text_11_28\\text_11_28_.c",
+              "RelativeToolTip": "text_11_28\\text_11_28_.c",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-28T08:36:06.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "text_11_28.c",
               "DocumentMoniker": "D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\text_11_28\\text_11_28.c",
               "RelativeDocumentMoniker": "text_11_28\\text_11_28.c",
               "ToolTip": "D:\\vs \u6587\u4EF6\\text\u8FDC\u7A0B\\text_11_28\\text_11_28\\text_11_28.c",
               "RelativeToolTip": "text_11_28\\text_11_28.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-27T16:03:35.867Z",
               "EditorCaption": ""
