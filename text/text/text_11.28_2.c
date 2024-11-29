@@ -3,7 +3,7 @@
 void Swap(char* a, char* b, int wig);
 #include<stdio.h>
 #include<stdlib.h>
-typedef struct str
+ struct str
 {
 	char numm[20];
 	int age;
