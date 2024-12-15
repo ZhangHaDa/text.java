@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class textApp_12_14 {
     public static void main(String[] args){
         //登录系统
-        menu1();
         Scanner sc = new Scanner(System.in);
         ArrayList<ojStudent_12_14> os = new ArrayList<>();
          loop: while (true) {
+            menu1();
             System.out.println("请你输入你的选择：");
             switch(sc.next()){
                 case "1":
@@ -224,6 +224,8 @@ public class textApp_12_14 {
         }
         if(count==2){
             System.out.println("恭喜你登录成功！");
+            textApp_12_15 t = new textApp_12_15();
+            t.Student();
         }
 
     }
