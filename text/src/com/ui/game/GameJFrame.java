@@ -3,7 +3,7 @@ package com.ui.game;
 import javax.swing.*;
 
 public class GameJFrame extends JFrame {
-    public GameJFrame(){
+    public GameJFrame() {
         //初始化界面
         initJFrame();
 
@@ -16,7 +16,7 @@ public class GameJFrame extends JFrame {
     }
 
     //初始化菜单
-    private  void initJMnuBar() {
+    private void initJMnuBar() {
         //创造整个菜单的对象
         JMenuBar JMenuBer = new JMenuBar();
 
@@ -50,7 +50,7 @@ public class GameJFrame extends JFrame {
     private void initJFrame() {
 
         //设置界面的宽和高
-        this.setSize(603,680);
+        this.setSize(603, 680);
 
         //设置界面的标题
         this.setTitle("拼图单机版 v1.0");
