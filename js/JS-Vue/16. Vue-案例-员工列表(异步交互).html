@@ -193,7 +193,7 @@
         </footer>
     </div>
 
-
+<script src="js/axios.js"></script>
     <script type="module">
         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
@@ -206,47 +206,29 @@
                         job: "",
                     },
                     empList: [
-                        {
-                            "id": 1,
-                            "name": "谢逊",
-                            "image": "https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/4.jpg",
-                            "gender": 1,
-                            "job": "1",
-                            "entrydate": "2023-06-09",
-                            "updatetime": "2024-09-30T14:59:38"
-                        },
-                        {
-                            "id": 2,
-                            "name": "韦一笑",
-                            "image": "https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg",
-                            "gender": 1,
-                            "job": "1",
-                            "entrydate": "2020-05-09",
-                            "updatetime": "2024-09-01T00:00:00"
-                        },
-                        {
-                            "id": 3,
-                            "name": "黛绮丝",
-                            "image": "https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/2.jpg",
-                            "gender": 2,
-                            "job": "2",
-                            "entrydate": "2021-06-01",
-                            "updatetime": "2024-09-01T00:00:00"
-                        }
+                       
                     ]
                 }
             },
             methods: {
-                search() {
-                    console.log(this.searchForm);
-
+                async search() {
+                //  axios.get(`https://web-server.itheima.net/emps/list?name=${this.searchForm.name}&gender=${this.searchForm.gender}&job=${this.searchForm.job}`).then((result) => {
+                //        this.empList = result.data.data;
+                //     });
+                let result = await axios.get(`https://web-server.itheima.net/emps/list?name=${this.searchForm.name}&gender=${this.searchForm.gender}&job=${this.searchForm.job}`);
+                this.empList = result.data.data;
+                
                 },
                 clear() {
                     this.searchForm = { name: "", gender: "", job: "" }
+                    this.search();
                 }
-            }
-
-        }).mount('#container')
+            },
+            mounted() {
+              this.search();  
+            },
+        
+       } ).mount('#container')
     </script>
 
 </body>
