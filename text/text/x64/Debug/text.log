@@ -1,0 +1,4 @@
+﻿  text_11.28_2.c
+D:\vs 文件\text-远程\text\text\text_11.28_2.c(10,2): warning C4091: “typedef ”: 没有声明变量时忽略“str”的左侧
+D:\vs 文件\text-远程\text\text\text_11.28_2.c(39,9): warning C4013: “strcmp”未定义；假设外部返回 int
+D:\vs 文件\text-远程\text\text\text_11.28_2.c(39,53): error C2037: “numm”的左侧部分指定未定义的结构/联合“st”

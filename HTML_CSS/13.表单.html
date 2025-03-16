@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>导航栏示例</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .navbar {
+      width: 70%;
+      margin: 0 auto; /* 水平居中 */
+      background-color: #a0c4b0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+
+    .navbar-title {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .navbar-button {
+      background-color: #6b8e23;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .navbar-button:hover {
+      background-color: #556b2f;
+    }
+
+    .form-container {
+      width: 70%;
+      margin: 20px auto; /* 水平居中 */
+      background-color: #f5e6d3;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-row label {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    .form-row input,
+    .form-row select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 20px;
+    }
+
+    .form-row button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-row .btn-query {
+      background-color: #1e90ff;
+      color: #ffffff;
+      margin-right: 10px;
+    }
+
+    .form-row .btn-clear {
+      background-color: #a9a9a9;
+      color: #ffffff;
+    }
+
+    .form-row .btn-query:hover {
+      background-color: #1c86ee;
+    }
+
+    .form-row .btn-clear:hover {
+      background-color: #808080;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-title">tlias 智能学习辅助系统</div>
+    <a class="navbar-button">退出登录</a>
+  </div>
+
+  <div class="form-container">
+    <div class="form-row">
+      <label for="name">姓名</label>
+      <input type="text" id="name" placeholder="请输入员工姓名">
+      <label for="gender">性别</label>
+      <select id="gender">
+        <option value="">请选择</option>
+        <option value="male">男</option>
+        <option value="female">女</option>
+      </select>
+      <label for="position">职位</label>
+      <select id="position">
+        <option value="">请选择</option>
+        <option value="班主任">班主任</option>
+        <option value="讲师">讲师</option>
+        <option value="学工主任">学工主任</option>
+        <option value="教研主管">教研主管</option>
+        <option value="咨询师">咨询师</option>
+      </select>
+      <button class="btn-query" onclick="query()">查询</button>
+      <button class="btn-clear" onclick="clearForm()">清空</button>
+    </div>
+  </div>
+
+  <script>
+    function query() {
+      const name = document.getElementById('name').value;
+      const gender = document.getElementById('gender').value;
+      const position = document.getElementById('position').value;
+      alert(`查询条件:\n姓名: ${name}\n性别: ${gender}\n职位: ${position}`);
+    }
+
+    function clearForm() {
+      document.getElementById('name').value = '';
+      document.getElementById('gender').value = '';
+      document.getElementById('position').value = '';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+﻿  text_12.1.c
+D:\vs 文件\text-远程\text_12.1\text_12.1\text_12.1.c(127,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  text_12.1.vcxproj -> D:\vs 文件\text-远程\text_12.1\x64\Debug\text_12.1.exe
